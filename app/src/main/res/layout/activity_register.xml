@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_registering"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.walael.testapp.Register">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/water"
+        tools:context="com.example.walael.testapp.Register">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="Register here"
+            android:textSize="20sp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyChama"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12sp"
+            android:textSize="50sp"
+            android:textStyle="italic"
+            android:textColor="#332d2d"/>
+        <TextView
+            android:layout_margin="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Organize Your Chama activities with ease"
+            android:textStyle="italic"
+            android:textSize="23sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13sp"
+            android:background="@drawable/ic_person_black_24dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@android:color/transparent"
+            android:hint="Username"
+            android:textColor="#000000"
+            android:ems="10"
+            android:textColorHint="#895d5d"
+            android:maxLines="1"
+            android:id="@+id/usernameRegister"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="15sp"
+        android:background="@color/WhiteColour"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13sp"
+            android:background="@drawable/ic_call_black_24dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@android:color/transparent"
+            android:hint="Phone number"
+            android:textColor="#000000"
+            android:ems="10"
+            android:textColorHint="#895d5d"
+            android:maxLines="1"
+            android:id="@+id/phone"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="15sp"
+        android:background="@color/WhiteColour"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13sp"
+            android:background="@drawable/ic_https_black_24dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@android:color/transparent"
+            android:hint="Password"
+            android:textColor="#000000"
+            android:ems="10"
+            android:textColorHint="#895d5d"
+            android:maxLines="1"
+            android:id="@+id/password1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="15sp"
+        android:background="@color/WhiteColour"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13sp"
+            android:background="@drawable/ic_https_black_24dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@android:color/transparent"
+            android:hint="Confirm Password"
+            android:textColor="#000000"
+            android:ems="10"
+            android:textColorHint="#895d5d"
+            android:maxLines="1"
+            android:id="@+id/password2"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:background="@color/WhiteColour"/>
+
+    <Button
+        android:layout_marginTop="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="42sp"
+        android:layout_marginLeft="22sp"
+        android:layout_marginRight="22sp"
+        android:layout_marginBottom="75sp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:background="@drawable/btn_sign_in"
+        android:id="@+id/btn_register"
+        android:onClick="onClickRegister"/>
+
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

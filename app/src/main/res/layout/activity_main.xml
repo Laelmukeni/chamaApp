@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -8,43 +7,121 @@
     android:background="@drawable/water"
     tools:context="com.example.walael.testapp.MainActivity">
 
-    <TextView
-        android:text="HALLO THERE"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:id="@+id/textView" />
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_height="wrap_content"
+    <LinearLayout
         android:layout_width="match_parent"
-        >
+        android:layout_height="75sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="MY CHAMA"
+            android:textColor="#000"
+            android:textSize="35sp"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="5sp"
+            android:id="@+id/textView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13sp"
+            android:background="@drawable/ic_person_black_24dp"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter word"
-            android:textColorHint="#998a8a"
-            android:id="@+id/edittext"/>
+            android:layout_height="45sp"
+            android:background="@android:color/transparent"
+            android:hint="Username"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:ems="10"
+            android:textColorHint="#895d5d"
+            android:maxLines="1"
+            android:id="@+id/edittext_username"/>
 
-    </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="15sp"
+        android:background="@color/WhiteColour"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13sp"
+            android:background="@drawable/ic_https_black_24dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@android:color/transparent"
+            android:hint="Password"
+            android:textColor="#000000"
+            android:ems="10"
+            android:maxLines="1"
+            android:textColorHint="#895d5d"
+            android:id="@+id/edittext_password"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="15sp"
+        android:background="@color/WhiteColour"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NEXT"
-        android:onClick="OnClick"
-        android:id="@+id/button"/>
+        android:layout_marginTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="38sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:text="Log in"
+        android:textAlignment="center"
+        android:background="@drawable/btn_sign_in"
+        android:id="@+id/btn_log_in"
+        android:onClick="onClickLogIn"/>
+
+    <Button
+        android:layout_marginTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:text="Sign in"
+        android:textAlignment="center"
+        android:onClick="onClickSignIn"
+        android:background="@drawable/btn_sign_in"
+        android:id="@+id/btn_sign_in"/>
 
     <TextView
+        android:layout_marginRight="17sp"
+        android:layout_marginLeft="17sp"
         android:text="Jesus Christ is Lord"
+        android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
         android:textStyle="bold"
         android:textSize="50sp"
-        android:paddingTop="50sp"/>
+        android:paddingTop="15sp"/>
 
 </LinearLayout>
